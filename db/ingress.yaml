@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mariadb-ingress
+  namespace: ozone
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: "TCP"
+spec:
+  rules:
+  - host: mariadb.ozoneshop.fr
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: mariadb
+            port:
+              number: 3306
