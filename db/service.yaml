@@ -4,10 +4,11 @@ metadata:
   name: mariadb
   namespace: ozone
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: mariadb
   ports:
   - port: 3306
     targetPort: 3306
     protocol: TCP
+    nodePort: 32001  # Un port dans la plage 30000-32767
