@@ -1,10 +1,10 @@
-NameSpace: mycloud
-AppName: amandine-php74-db
+NameSpace: koden-clients
+AppName: ozone-db
 
 MariadbReplicas: 1
 MariadbImageTag: latest
 MariadbDiskSize: 50Gi
 MariadbServerId: 3
-MariadbDbName: mydatabase
-MariadbDbUser: username
+MariadbDbName: ozoneshop_prod
+MariadbDbUser: ozoneshop_prod
 MariadbDbPort: 3306
