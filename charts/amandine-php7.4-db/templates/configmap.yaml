@@ -7,4 +7,7 @@ data:
   my.cnf: |
     [mysqld]
     server-id = {{ .Values.MariadbServerId }}
-    replicate-do-db = {{ .Values.MariadbDbName }}
+    log_bin = /var/lib/mysql/mysql-bin.log
+    binlog_format = ROW
+    expire_logs_days = 7
+    max_binlog_size = 100M
