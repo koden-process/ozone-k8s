@@ -4,4 +4,4 @@ AppName: ozone-app
 HostName: ozoneshop.fr
 DiskSize: 25Gi
 
-DockerImage: killiankopp/amandine-7.4:241216
+DockerImage: killiankopp/amandine-7.4:241122
