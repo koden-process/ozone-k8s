@@ -45,6 +45,13 @@ spec:
         - name: config-volume
           mountPath: /etc/mysql/conf.d/my.cnf
           subPath: my.cnf
+        resources:
+          requests:
+            memory: "8Gi"
+            cpu: "2"
+          limits:
+            memory: "16Gi"
+            cpu: "4"
       volumes:
       - name: {{ .Values.AppName }}-persistent-storage
         persistentVolumeClaim:

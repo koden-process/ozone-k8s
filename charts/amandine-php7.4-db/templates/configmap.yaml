@@ -12,7 +12,7 @@ data:
     log_bin = OFF
 
     # InnoDB settings for high-performance writes
-    innodb_buffer_pool_size = 24G         # Utilise 75% de la RAM disponible pour InnoDB
+    innodb_buffer_pool_size = 12G         # Utilise 75% de la RAM disponible pour InnoDB
     innodb_log_buffer_size = 512M         # Augmente le buffer des logs d'InnoDB pour les écritures fréquentes
     innodb_log_file_size = 1G             # Augmenter la taille des fichiers journaux pour plus de performance
     innodb_flush_log_at_trx_commit = 2    # Meilleure performance en minimisant les écritures disque sur chaque commit
