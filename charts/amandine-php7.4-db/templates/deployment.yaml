@@ -47,8 +47,8 @@ spec:
           subPath: my.cnf
         resources:
           requests:
-            memory: "8Gi"
-            cpu: "2"
+            memory: "12Gi"
+            cpu: "1.5"
           limits:
             memory: "16Gi"
             cpu: "4"
